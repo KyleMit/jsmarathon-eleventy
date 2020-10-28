@@ -23,5 +23,15 @@
         {{ content | safe }}
     </div>
 
+    <footer>
+        {% if author %}
+            authored by {{author}}
+        {% endif %}
+
+        <pre>
+            {{ cats | dump }}
+        </pre>
+    </footer>
+
 </body>
 </html>
