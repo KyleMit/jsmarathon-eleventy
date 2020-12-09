@@ -1,6 +1,16 @@
+html {
+    background: white;
+}
+
 body {
-    width: 40rem;
-    margin: auto 0;
+    max-width: 40rem;
+    margin: 0 auto;
+    background: ghostwhite;
+    padding: 20px;
+    box-shadow: 0 0 20px 20px #f8f8ffeb;
+}
+
+header {
     text-align: center;
 }
 

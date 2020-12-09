@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <link rel="stylesheet" href="/assets/site.css">
-</head>
-<body>
-    <h1>JS Marathon Eleventy</h1>
+  </head>
+  <body>
+    <header>
 
-    <nav>
+      <h1>JS Marathon Eleventy</h1>
+
+      <nav>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/contact/">Contact</a></li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/contact/">Contact</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
 
-    <div class="main">
-        <h2>{{title}}</h2>
+    </header>
 
-        {{ content | safe }}
-    </div>
+    <main>
+      <h2>{{title}}</h2>
+
+      {{ content | safe }}
+    </main>
 
     <footer>
-        {% if author %}
-            authored by {{author}}
-        {% endif %}
-
-        <pre>
-            {{ cats | dump }}
-        </pre>
+      {% if author %}
+        authored by
+        {{author}}
+      {% endif %}
     </footer>
 
-</body>
+  </body>
 </html>

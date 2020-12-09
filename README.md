@@ -2,7 +2,7 @@
 
 Brought to you by [This Dot Labs](https://labs.thisdot.co/javascript-marathon)
 
-Check out our [live eventy website](https://labs.thisdot.co/)
+Check out our [live eleventy website](https://labs.thisdot.co/)
 
 ## Video Tutorials
 
@@ -52,18 +52,18 @@ eleventy --serve
   layout: defaultLayout.njk
   ---
   ```
-  
- ### Create Eleventy Config
- 
- * Create `.eleventy.js`
- * Add [`addPassthroughCopy`](https://www.11ty.dev/docs/copy/)
- * Add some styles
- 
- 
- ### Create / Consume Properties
- 
- * Add `title` property to frontmatter
- * Consume `{{title}}` elsewher (in layout)
+
+### Create Eleventy Config
+
+* Create `.eleventy.js`
+* Add [`addPassthroughCopy`](https://www.11ty.dev/docs/copy/)
+* Add some styles
+
+
+### Create / Consume Properties
+
+* Add `title` property to frontmatter
+* Consume `{{title}}` elsewhere (in layout)
 
 ### Push to Netlify
 
@@ -83,4 +83,17 @@ eleventy --serve
 * Output with `{{cats | dump}}`
 
 
+
+
+
+## Part 2
+
+[The Cat API](https://docs.thecatapi.com/)
+
+### Data Stage 1 - Hard Coded
+
+
+### Data Stage 2 - Live Pull
+
+### Data Stage 3 - Pull + Cache
 
