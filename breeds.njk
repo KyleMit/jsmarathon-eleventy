@@ -1,0 +1,14 @@
+---
+layout: defaultLayout.njk
+title: Breeds of Cats
+---
+
+<ul>
+
+    {% for breed in breeds %}
+        <li>
+            <a href="/breeds/{{breed.id}}/">{{ breed.name }}</a>
+        </li>
+    {% endfor %}
+
+</ul>

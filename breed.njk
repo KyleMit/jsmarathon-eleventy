@@ -1,0 +1,17 @@
+---
+layout: defaultLayout.njk
+title: Breed Detail
+pagination:
+    data: breeds
+    size: 1
+    alias: breed
+permalink: /breeds/{{breed.id}}/index.html
+---
+
+<dl>
+    <dt>Name</dt>
+    <dd>{{breed.name}}</dd>
+
+    <dt>Temperament</dt>
+    <dd>{{breed.temperament}}</dd>
+</dl>
